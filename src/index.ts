@@ -6,7 +6,7 @@ import {
 
 const { Filesystem } = Plugins;
 
-class CapacitorStore {
+export class CapacitorStore {
   async getItem(key: string) {
     await Filesystem.readFile({
       path: key,
