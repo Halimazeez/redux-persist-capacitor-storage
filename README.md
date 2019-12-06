@@ -4,13 +4,13 @@
 
 ### Install
 
-```
+```bash
 yarn add @capacitor/core redux-persist-capacitor-storage
 ```
 
 ### Simple use-case with auth state
 
-```
+```javascript
 import CapacitorStore from "redux-persist-capacitor-storage";
 import { persistReducer } from "redux-persist";
 import { auth } from "./auth";
@@ -23,5 +23,4 @@ const authPersistConfig = {
 const appReducer = combineReducers({
   auth: persistReducer(authPersistConfig, auth)
 });
-
 ```
