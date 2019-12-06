@@ -13,5 +13,15 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@capacitor/core": "^1.3.0"
-  }
+  },
+  "keywords": [
+    "redux",
+    "redux-persist",
+    "capacitor",
+    "storage",
+    "android",
+    "ios",
+    "electron",
+    "filesystem"
+  ]
 }

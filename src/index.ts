@@ -14,10 +14,10 @@ export class CapacitorStore {
     });
   }
 
-  async setItem(path: string, data: any) {
+  async setItem(key: string, value: string) {
     await Filesystem.writeFile({
-      path,
-      data,
+      path: key,
+      data: value,
       directory: FilesystemDirectory.Cache,
       encoding: FilesystemEncoding.UTF8
     });
