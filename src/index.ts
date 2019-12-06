@@ -5,7 +5,8 @@ import {
 } from "@capacitor/core";
 
 const { Filesystem } = Plugins;
-export class CapacitorStore {
+
+class CapacitorStore {
   async getItem(key: string) {
     await Filesystem.readFile({
       path: key,
@@ -46,4 +47,4 @@ export class CapacitorStore {
   }
 }
 
-export default CapacitorStore;
+export default new CapacitorStore();
