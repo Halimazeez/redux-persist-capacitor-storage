@@ -7,3 +7,21 @@
 ```
 yarn add @capacitor/core redux-persist-capacitor-storage
 ```
+
+### Simple use-case with auth state
+
+```
+import CapacitorStore from "redux-persist-capacitor-storage";
+import { persistReducer } from "redux-persist";
+import { auth } from "./auth";
+
+const authPersistConfig = {
+  key: "auth",
+  storage: CapacitorStore
+};
+
+const appReducer = combineReducers({
+  auth: persistReducer(authPersistConfig, auth)
+});
+
+```
