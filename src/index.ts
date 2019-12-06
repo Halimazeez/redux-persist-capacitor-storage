@@ -45,5 +45,3 @@ export class CapacitorStore {
     });
   }
 }
-
-export default storage;
