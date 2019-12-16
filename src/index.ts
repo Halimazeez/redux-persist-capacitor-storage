@@ -33,7 +33,7 @@ export class CapacitorStore {
 
   async clear() {
     await Filesystem.rmdir({
-      path: "secrets",
+      path: "",
       directory: FilesystemDirectory.Cache,
       recursive: false
     });
@@ -41,7 +41,7 @@ export class CapacitorStore {
 
   async getAllKeys() {
     await Filesystem.readdir({
-      path: "secrets",
+      path: "",
       directory: FilesystemDirectory.Cache
     });
   }
