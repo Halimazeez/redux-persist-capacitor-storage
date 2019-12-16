@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-capacitor-storage",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Redux persist storage adapter for capacitor filesystem storage across all devices",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
